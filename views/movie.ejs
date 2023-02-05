@@ -1,0 +1,19 @@
+<head>
+    <%- include('../style.ejs'); %>
+
+</head>
+<body>
+    <ol>
+        <%movies.forEach((a)=>{%>
+            <li>
+                <strong>
+                   Movie Name - <%=a.movie%> 
+                </strong>
+                <p>
+                Actors - <b><%=a.actors %> </b><br>
+                Director -  <b><%=a.director %> </b> 
+                </p>
+            </li>
+            <%})%>
+        </ol>
+    </body>
